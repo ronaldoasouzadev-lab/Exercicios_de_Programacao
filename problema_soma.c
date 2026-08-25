@@ -6,11 +6,6 @@ void limpar_entrada() {
     while ((c = getchar()) != '\n' && c != EOF) {}
 }
 
-void ler_texto(char *buffer, int length) {
-fgets(buffer, length, stdin);
-strtok(buffer, "\n");
-}
-
 int main() {
 
     int x, y, soma;
@@ -24,7 +19,7 @@ int main() {
     limpar_entrada();
 
     soma = x + y;
-    
+
     printf("SOMA = %d\n",soma);
 
     
